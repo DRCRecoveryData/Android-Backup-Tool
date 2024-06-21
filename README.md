@@ -1,4 +1,4 @@
-# Android Logical Backup Tool for Android Forensics
+# Android Backup Tool for Android Forensics
 
 ![2024-06-21_153832](https://github.com/DRCRecoveryData/Android-Backup-Tool/assets/85211068/8e2a0113-e87a-41e2-bf29-699d1f1df9df)
 
