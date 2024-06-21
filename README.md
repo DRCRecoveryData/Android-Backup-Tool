@@ -8,7 +8,7 @@ This tool provides a graphical interface (GUI) application built with PyQt6 and 
 
 ## Features
 - **Backup**: Create full backups of Android devices to a specified directory.
-- **Convert to tar**: Convert Android backup (`.ab`) files to `.tar`.
+- **Convert to tar**: Convert Android backup `.ab` files to `.tar`.
 - **Extract tar**: Extract the contents of a `.tar` file.
 - **Copy Files**: Copy files from the device's SD card to the backup directory.
 
