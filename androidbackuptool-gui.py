@@ -256,19 +256,4 @@ class LogicalBackupWorker(QThread):
         self.log_updated.emit(f"Fetching files from {sdcard_path} on the device to {backup_dir}.")
 
         try:
-            process = subprocess.Popen([adb_path, '-s', device_serial, 'pull', sdcard_path, backup_dir], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-            stdout, stderr = process.communicate()
-
-            if process.returncode != 0:
-                self.log_updated.emit(f"Error occurred during file retrieval from device: {stderr.decode('utf-8')}")
-            else:
-                self.log_updated.emit(f"Files retrieved successfully from {sdcard_path} on the device to {backup_dir}.")
-
-        except Exception as e:
-            self.log_updated.emit(f"An error occurred during file retrieval from device: {str(e)}")
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    window = LogicalBackupApp()
-    window.show()
-    sys.exit(app.exec())
+            process = subprocess.Popen([adb_path, '-s', device_serial, 'pull', sdcard_path, backup_dir], stdout=subprocess.PIPE, stderr=subprocess.PIPE
